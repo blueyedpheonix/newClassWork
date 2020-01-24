@@ -31,6 +31,7 @@ public class GreetSystem {
         Set<Greeter> newset = new HashSet<>(greeterSet);
         boolean isAdded = newset.add(greeter);
         setTheSet(newset);
+        greeterTask.setGreeters(greeterSet);
         return isAdded;
     }
 
